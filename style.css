@@ -1,0 +1,106 @@
+:root {
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Heebo", Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 60;
+  letter-spacing: 1px;
+  color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  height: auto;
+  width: 100vw;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5% 5% 5%;
+  height: 90vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 150;
+  letter-spacing: 2.86px;
+  align-self: center;
+}
+
+h1 span {
+  font-size: 8.4rem;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 1.6rem;
+  letter-spacing: 2.86px;
+  text-align: justify;
+  font-weight: 200;
+  margin: 0 10% 0 10%;
+}
+
+.image {
+  margin: auto;
+  max-width: 340px;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.first {
+  display: grid;
+  grid-template-rows: 3fr 1fr auto;
+}
+
+.second {
+  display: grid;
+  grid-template-rows: 3fr 1fr auto;
+}
+
+.button {
+  align-self: end;
+  margin: auto;
+}
+
+@media (max-width: 780px) {
+  article {
+    grid-template-columns: 1fr;
+  }
+  .first {
+    grid-template-rows: 1fr;
+  }
+  .button {
+    margin-bottom: 5%;
+  }
+  .second {
+    grid-template-rows: auto 1fr auto;
+  }
+  p {
+    /* line-height: 100%; */
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .button {
+    margin-bottom: 20%;
+  }
+  .image {
+    margin: auto;
+    max-width: 340px;
+    max-height: 330px;
+  }
+}
